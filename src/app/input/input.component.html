@@ -1,0 +1,7 @@
+<mat-card>
+  <form class="rules-form">
+      <input matInput placeholder="Add New Rule" name="rule" [ngModel]="newRule" (ngModelChange)="ruleToUpperCase($event)">
+      <p></p>
+      <button mat-button name="Add" (click)="addRule()">Add</button>
+  </form>
+</mat-card>

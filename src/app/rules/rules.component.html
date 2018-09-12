@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <mat-card>
+      <mat-card-title>
+          <button mat-button (click)="toggleRules()">Rules</button>
+      </mat-card-title>
+      <mat-card-content *ngIf="visible">
+          <mat-list>
+              <mat-list-item *ngFor="let rule of ruleObject">{{ rule.rule }}</mat-list-item>
+          </mat-list>
+      </mat-card-content>
+  </mat-card>
+</div>
